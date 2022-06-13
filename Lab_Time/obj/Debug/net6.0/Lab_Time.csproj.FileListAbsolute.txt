@@ -1,0 +1,12 @@
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\bin\Debug\net6.0\Lab_Time.deps.json
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\bin\Debug\net6.0\Lab_Time.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\bin\Debug\net6.0\Lab_Time.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.csproj.AssemblyReference.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.AssemblyInfoInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.AssemblyInfo.cs
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\refint\Lab_Time.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\Lab_Time.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lab_Time\obj\Debug\net6.0\ref\Lab_Time.dll
