@@ -1,0 +1,12 @@
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\bin\Debug\net6.0\LightSource.deps.json
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\bin\Debug\net6.0\LightSource.dll
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\bin\Debug\net6.0\LightSource.pdb
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.csproj.AssemblyReference.cache
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.AssemblyInfoInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.AssemblyInfo.cs
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.dll
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\refint\LightSource.dll
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\LightSource.pdb
+C:\Users\Home\source\repos\Lab_CSharp\LightSource\obj\Debug\net6.0\ref\LightSource.dll
