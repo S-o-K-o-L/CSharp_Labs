@@ -1,0 +1,12 @@
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\bin\Debug\net6.0\Lab_2_Party.deps.json
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\bin\Debug\net6.0\Lab_2_Party.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\bin\Debug\net6.0\Lab_2_Party.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.csproj.AssemblyReference.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.AssemblyInfoInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.AssemblyInfo.cs
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\refint\Lab_2_Party.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\Lab_2_Party.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lab_2_Party\obj\Debug\net6.0\ref\Lab_2_Party.dll
