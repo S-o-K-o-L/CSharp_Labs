@@ -1,0 +1,12 @@
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\bin\Debug\net6.0\Lav_4_Lights.deps.json
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\bin\Debug\net6.0\Lav_4_Lights.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\bin\Debug\net6.0\Lav_4_Lights.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.csproj.AssemblyReference.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.AssemblyInfoInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.AssemblyInfo.cs
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\refint\Lav_4_Lights.dll
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\Lav_4_Lights.pdb
+C:\Users\Home\source\repos\Lab_CSharp\Lav_4_Lights\obj\Debug\net6.0\ref\Lav_4_Lights.dll
