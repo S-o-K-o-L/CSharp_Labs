@@ -19,6 +19,7 @@ namespace Lab_5_BusStation
         public bool RandomFull()
         {
             Random rnd = new Random();
+            IsFull = false;
             if (rnd.Next(0,100)<30)
             {
                 Message("Автобус " + Name + " переполнен!");
@@ -29,17 +30,20 @@ namespace Lab_5_BusStation
 
         protected override void CheckEvents()
         {
+            Random rand = new Random();
             if (!IsLocked)
             {
                 if (IsFull)
                 {
-                    MoveToX = station.posX + 500;
+                    MoveToX = station.posX - 600;
                     MoveToY = station.posY;
                 }
                 else
                 {
                     MoveToX = defaultX;
                     MoveToY = defaultY;
+                   // MoveToX = station.posX + rand.Next(-200,200);
+                   // MoveToY = station.posY;
                 }
             }      
         }

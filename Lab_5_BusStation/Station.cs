@@ -11,6 +11,7 @@ namespace Lab_5_BusStation
 
         Pass currentPassenger;
         Bus currentBus;
+        public string Name { get; set; }    
         public Station(Action<string> message, List<Bus> buses, List<Pass> passengers, object busLocker, object passengerLocker, double x,double y):base(message)
         {
             this.buses = buses;
@@ -26,8 +27,9 @@ namespace Lab_5_BusStation
         {
             while(!IsCanceled)
             {
-                Message("Начало работы остановки!");
+                Message("Начало работы остановки " + Name);
                 Task.Delay(1000).Wait();
+                
                 if (!StartGettingOnBus())
                 {
                     Message("Автобус не приехал на остановку, пассажиры растроены");
@@ -39,7 +41,9 @@ namespace Lab_5_BusStation
                     {
                         currentBus.IsLocked = false;
                         Task.Delay(300).Wait();
-                        Message("Автобус " + currentBus.Name + " переполнен, пассажиры не довольны!");
+                        Message("В автобусе " + currentBus.Name + " нет мест, пассажиры не довольны!");
+                        buses.Remove(currentBus);
+                        currentBus = null;
                     }
                     else
                     {
@@ -51,6 +55,7 @@ namespace Lab_5_BusStation
                         currentBus = null;
                     }
                 }
+                Task.Delay(6000).Wait();
             }
         }
         bool StartPassengerSittingOnBus()
@@ -70,6 +75,7 @@ namespace Lab_5_BusStation
                         isSitting = true;
                     }
                 }
+                
             }
             return isSitting;
         }

@@ -1,0 +1,12 @@
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\bin\Debug\net6.0\Lab_5_BusStation.deps.json
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\bin\Debug\net6.0\Lab_5_BusStation.dll
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\bin\Debug\net6.0\Lab_5_BusStation.pdb
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.csproj.AssemblyReference.cache
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.AssemblyInfo.cs
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.dll
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\refint\Lab_5_BusStation.dll
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\Lab_5_BusStation.pdb
+C:\Users\Home\Desktop\Учеба\CSharp_Labs-main\Lab_5_BusStation\obj\Debug\net6.0\ref\Lab_5_BusStation.dll

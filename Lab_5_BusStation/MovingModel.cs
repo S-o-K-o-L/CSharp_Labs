@@ -49,7 +49,7 @@ namespace Lab_5_BusStation
             {
                 CheckEvents();
                 Move();
-                currentAction.Invoke();
+                currentAction?.Invoke();
                 Task.Delay(30).Wait();
             }
         }

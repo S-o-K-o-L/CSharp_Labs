@@ -6,7 +6,7 @@ using Lab_5_BusStation;
 
 namespace Lab_5
 {
-    class ViewModel : Object
+    public class ViewModel : Object
     {
         public Model Model { get; }
 
@@ -14,6 +14,6 @@ namespace Lab_5
 
         public override double Y { get => Model.posY; }
 
-        public ViewModel(Model model, Image image, float x, float y) : base(image, x, y) => Model = model;
+        public ViewModel(Model model, Image image, double x, double y) : base(image, x, y) => Model = model;
     }
 }

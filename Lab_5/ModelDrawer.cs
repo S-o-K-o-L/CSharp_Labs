@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Lab_5_BusStation;
+using Lab_5_BusStation.Passenger;
 using Timer = System.Windows.Forms.Timer;
 
 namespace Lab_5
 {
-    class ModelDrawer
+    public class ModelDrawer
     {
         private readonly Bitmap bitmap;
         private readonly Graphics graphics;
@@ -23,7 +25,7 @@ namespace Lab_5
             timer.Tick += new EventHandler((obj, e) =>
             {
                 graphics.Clear(Color.White);
-                graphics.DrawImage(backgroundImage, 0, 0);
+                graphics.DrawImage(backgroundImage, 0, 0, pictureBox.Width,pictureBox.Height);
 
                 lock (objectsLocker)
                 {
@@ -35,10 +37,22 @@ namespace Lab_5
 
                 lock (modelsLocker)
                 {
+                    ViewModel deleteBus = null;
+                    ViewModel deletePassanger = null;
                     foreach (ViewModel mo in models)
                     {
                         Draw(mo);
+                        if(mo.Model is Bus && mo.Model.posX <= 5)
+                        {
+                            deleteBus = mo;
+                        }
+                        if(mo.Model is Passenger && mo.Model.posY <= 350)
+                        {
+                            deletePassanger = mo;
+                        }
                     }
+                    if (deleteBus != null)models.Remove(deleteBus);
+                    if (deletePassanger!=null)models.Remove(deletePassanger);
                 }
 
                 pictureBox.Image = bitmap;

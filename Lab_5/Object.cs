@@ -6,7 +6,7 @@ using Lab_5_BusStation;
 
 namespace Lab_5
 {
-    class Object
+    public class Object
     {
         public virtual double X { get; set; }
 
