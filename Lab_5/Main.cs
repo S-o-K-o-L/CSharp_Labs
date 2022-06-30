@@ -6,6 +6,7 @@ namespace Lab_5
     public partial class Main : Form
     {
         string[] names = { "Âàñÿ", "Ïåòÿ", "Ñàøà" };
+        const int MAX_COUNT_PASSANGERS = 10;
         public Main()
         {
             InitializeComponent();
@@ -61,7 +62,11 @@ namespace Lab_5
             station.Name = InputInfo();
             Task.Run(station.Start);
             ñîçäàòüÎñòàíîâêóToolStripMenuItem.Enabled = false;
-            äîáàâèòüÀâòîáóñToolStripMenuItem.Enabled = true;
+            AddBusToolStripMenuItem.Enabled = true;
+            AddPassangerToolStripMenuItem.Enabled = true;
+            AddOld.Enabled = true;
+            AddAdult.Enabled = true;
+            AddYoung.Enabled = true;
         }
 
         private void äîáàâèòüÀâòîáóñToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,20 +86,66 @@ namespace Lab_5
                 viewModels.Add(new ViewModel(bus,image, x, y));
             }
             Task.Run(bus.Start);
-        }
-        private void GeneratePassangers()
-        {
-
-        }
+        }     
         private void AddPassanger(Passenger pass,Image image)
         {
             Random random = new Random();
-            double x = random.Next(100, 1000),y=250;
             pass.Name = names[random.Next(names.Length)];
             passengers.Add(pass);
-            lock
-
+            lock (viewModelsLocker)
+            {
+                viewModels.Add(new ViewModel(pass, image, pass.posX, pass.posY));
+            }
+            Task.Run(pass.Start);
+            if(passengers.Count >= MAX_COUNT_PASSANGERS)
+            {
+                AddOld.Enabled = false;
+                AddAdult.Enabled = false;
+                AddYoung.Enabled = false;
+                AddPassangerToolStripMenuItem.Enabled = false;
+            }
+        }
+        private void AddYongPassanger_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            double x = random.Next(100, 1000), y = 250;
+            Image image = new Bitmap(Properties.Resources.YoungPassenger, 100, 30);
+            YoungPassenger pass = new YoungPassenger(station,Message, x, y);
+            AddPassanger(pass, image);       
+        }
+        private void AddAdultPassanger_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            double x = random.Next(100, 1000), y = 250;
+            Image image = new Bitmap(Properties.Resources.AdultPassenger, 200, 75);
+            AdultPassenger pass = new AdultPassenger(station,Message, x, y);
+            AddPassanger(pass, image);
+        }
+        private void AddOldPassanger_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            double x = random.Next(100, 1000), y = 250;
+            Image image = new Bitmap(Properties.Resources.OldPassenger, 120, 50);
+            OldPassenger pass = new OldPassenger(station,Message, x, y);
+            AddPassanger(pass, image);
         }
 
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            drawer.Stop();
+
+            foreach (Passenger pass in passengers)
+            {
+                pass.IsCanceled = true;
+            }
+
+            foreach (ViewModel mo in viewModels)
+            {
+                if (mo is ViewModel)
+                {
+                    mo.Model.IsCanceled = true;
+                }
+            }
+        }
     }
 }

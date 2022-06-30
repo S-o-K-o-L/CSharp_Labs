@@ -28,8 +28,8 @@ namespace Lab_5_BusStation
             while(!IsCanceled)
             {
                 Message("Начало работы остановки " + Name);
-                Task.Delay(1000).Wait();
-                
+                Task.Delay(5000).Wait();
+
                 if (!StartGettingOnBus())
                 {
                     Message("Автобус не приехал на остановку, пассажиры растроены");
@@ -37,7 +37,7 @@ namespace Lab_5_BusStation
                 else
                 {
                     WaitBus();
-                    if(currentBus.RandomFull())
+                    if (currentBus.RandomFull())
                     {
                         currentBus.IsLocked = false;
                         Task.Delay(300).Wait();
@@ -47,15 +47,16 @@ namespace Lab_5_BusStation
                     }
                     else
                     {
-                        Message("Пассажиры садятся в автобус " + currentBus.Name);
+                        
                         PassengersSittingOnBus();
                         currentBus.IsLocked = false;
                         currentBus.IsFull = true;
                         buses.Remove(currentBus);
                         currentBus = null;
                     }
-                }
-                Task.Delay(6000).Wait();
+                }              
+                Message("Конец работы остановки " + Name);
+                Task.Delay(3000).Wait();
             }
         }
         bool StartPassengerSittingOnBus()
@@ -65,11 +66,11 @@ namespace Lab_5_BusStation
             {
                 for (int i = 0; i < passengers.Count && !isSitting; i++)
                 {
-                    if (!buses[i].IsLocked)
+                    if (!passengers[i].IsLocked)
                     {
                         currentPassenger = passengers[i];
                         currentPassenger.MoveToX = currentBus.posX;
-                        currentPassenger.MoveToY = currentBus.posY;
+                        currentPassenger.MoveToY = currentBus.posY + 50;
                         currentPassenger.IsLocked = true;
                         Message(currentPassenger.Name + " садится в автобус "+ currentBus.Name);
                         isSitting = true;
@@ -84,6 +85,7 @@ namespace Lab_5_BusStation
             if(currentPassenger.IsArrived())
             {
                 Task.Delay(1000).Wait();
+                currentPassenger.IsLocked = false;
                 Message(currentPassenger.Name + " сел на автобус " + currentBus.Name);
                 passengers.Remove(currentPassenger);
                 currentPassenger = null;
@@ -101,7 +103,7 @@ namespace Lab_5_BusStation
                     return;
                 }
                 else
-                {
+                {                   
                     WaitPassenger();
                     EndPassengerSittingOnBus();
                 }
@@ -118,7 +120,7 @@ namespace Lab_5_BusStation
                 lock (passengerLocker) { isArrived = currentPassenger.IsArrived(); }
             }
         }
-        void WaitBus()
+        bool WaitBus()
         {
             bool isArrived = false;
             while(!isArrived)
@@ -126,6 +128,7 @@ namespace Lab_5_BusStation
                 Task.Delay(100).Wait();
                 lock (busLocker) { isArrived = currentBus.IsArrived(); }
             }
+            return isArrived;
         }
 
         bool StartGettingOnBus()

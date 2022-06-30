@@ -46,7 +46,7 @@ namespace Lab_5
                         {
                             deleteBus = mo;
                         }
-                        if(mo.Model is Passenger && mo.Model.posY <= 350)
+                        if(mo.Model is Passenger && mo.Model.posY >= 270)
                         {
                             deletePassanger = mo;
                         }

@@ -10,14 +10,21 @@ namespace Lab_5_BusStation.Passenger
     {
         public string passangerType;
         public int age;
-        public Passenger(Action<string> message, double defaultX, double defaultY) : base(message, defaultX, defaultY) { }
+        Station station;
+        Random random = new Random();
+        public int randChange = 10; 
+        public Passenger(Station station,Action<string> message, double defaultX, double defaultY) : base(message, defaultX, defaultY) 
+        { 
+            this.station = station;
+            randChange = random.Next(-100, 50);
+        }
         protected override void CheckEvents()
         {
             if(!IsLocked)
             {
-                MoveToX = defaultX;
-                MoveToY = defaultY;
+                MoveToX = station.posX + 50 + randChange;
+                MoveToY = station.posY;
             }
-        }
+        }       
     }
 }

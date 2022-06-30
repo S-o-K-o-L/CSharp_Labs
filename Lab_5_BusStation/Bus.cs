@@ -9,8 +9,8 @@ namespace Lab_5_BusStation
     public class Bus : MovingModel
     {
         Station station;
-        public bool IsFull { get;  set; } 
-        public int Capacity { get; set; }
+        public bool IsFull { get;  set; } = false;
+        public int Capacity { get; set; } 
         public Bus(Station station,int capacity, Action<string> message, double defaultX, double defaultY) : base(message, defaultX, defaultY)
         {
             this.station = station;
@@ -36,14 +36,12 @@ namespace Lab_5_BusStation
                 if (IsFull)
                 {
                     MoveToX = station.posX - 600;
-                    MoveToY = station.posY;
+                    MoveToY = station.posY + 30;
                 }
                 else
                 {
                     MoveToX = defaultX;
                     MoveToY = defaultY;
-                   // MoveToX = station.posX + rand.Next(-200,200);
-                   // MoveToY = station.posY;
                 }
             }      
         }
